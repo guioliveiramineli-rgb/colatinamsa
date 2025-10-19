@@ -1,0 +1,56 @@
+body {
+    background-image: url('https://setur.es.gov.br/Media/Setur/Importacao/Noticias/o_polo_de_confeccoes_da_cidade_e_o_maior_4f198b68f2c37-1226-4f198b6904f85.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada escura para contraste */
+    z-index: 1;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.95); /* Fundo do formulário semi-transparente */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+}
+
+.login-box h2 {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 8px;
+}
+
+.btn {
+    border-radius: 8px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}

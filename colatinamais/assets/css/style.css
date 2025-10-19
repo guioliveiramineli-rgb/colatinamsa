@@ -1,0 +1,353 @@
+/* =========================================================
+   🌈 NOVA PALETA DE CORES E ESTILO GLOBAL DO APLICATIVO
+   ========================================================= */
+
+/* --- Cores Base (Nova Paleta) --- */
+:root {
+    --cor-header-fundo: #1E3170;
+    --cor-header-texto-icones: #C2A146;
+    --cor-primaria-1: #1D1B20; /* Preto/Cinza Escuro */
+    --cor-primaria-2: #D16541; /* Laranja Terracota */
+    --cor-primaria-3: #AD8D34; /* Ocre */
+    --cor-primaria-4: #FFFFFF; /* Branco */
+    --cor-secundaria-1: #DDDDDD; /* Cinza Claro */
+    --cor-secundaria-2: #F7F7F7; /* Fundo Claro */
+    --cor-menu-fundo: #1D1B20;
+    --cor-menu-ativo: #FFFFFF;
+    --cor-menu-inativo: #AAAAAA;
+    --cor-separador: #DDDDDD;
+    --cor-botao-primario-texto: #FFFFFF;
+    --cor-botao-primario-fundo: #EC693D;
+    --cor-botao-secionario-texto: #EC693D;
+    --cor-botao-terciario-texto: #EC693D;
+    --cor-outros-botoes-texto: #FFFFFF;
+    --cor-outros-botoes-fundo: #EC693D;
+}
+
+/* =========================================================
+   🔠 FONTES E BASE GERAL
+   ========================================================= */
+body {
+    background-color: var(--cor-secundaria-2);
+    padding-bottom: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cor-primaria-1);
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+/* =========================================================
+   🔷 CABEÇALHO (HEADER)
+   ========================================================= */
+.top-header {
+    height: 60px;
+    z-index: 1030;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background-color: var(--cor-header-fundo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.top-header .logo {
+    font-family: 'Damion', cursive;
+    font-size: 30px;
+    color: var(--cor-header-texto-icones);
+}
+
+.top-header a {
+    color: var(--cor-header-texto-icones) !important;
+    text-decoration: none;
+}
+
+.header-icon,
+.admin-login-icon {
+    font-size: 1.6rem;
+    color: var(--cor-header-texto-icones);
+    transition: opacity 0.2s;
+}
+
+.admin-login-icon {
+    font-size: 1.8rem;
+}
+
+.header-icon:hover,
+.admin-login-icon:hover {
+    opacity: 0.8;
+}
+
+/* =========================================================
+   📝 TÍTULOS
+   ========================================================= */
+h1, .h1 { font-family: 'Roboto', sans-serif; font-size: 24px; font-weight: 500; color: var(--cor-primaria-1); }
+h2, .h2 { font-family: 'Roboto', sans-serif; font-size: 18px; font-weight: 500; color: var(--cor-primaria-1); }
+h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: var(--cor-primaria-1);
+}
+h3, .h3 { font-size: 18px; }
+h4, .h4 { font-size: 16px; }
+h5, .h5 { font-size: 14px; }
+h6, .h6 { font-size: 12px; }
+
+.scroll-card .card-title,
+.favorite-card-info h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* =========================================================
+   🖼️ BANNER PRINCIPAL (PÁGINA INICIAL)
+   ========================================================= */
+.hero-section {
+    position: relative;
+    height: 35vh;
+    min-height: 220px;
+    background-image: url('../uploads/68f2b89361775-foto-aerea-arena-north-star-520h.webp');
+    background-size: cover;
+    background-position: center center;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px;
+}
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section h2, .hero-section p {
+    color: var(--cor-primaria-4);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+.hero-section h2 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.hero-section p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* =========================================================
+   📜 LISTAS HORIZONTAIS (CARDS)
+   ========================================================= */
+.horizontal-scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 15px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.scroll-card {
+    flex: 0 0 260px;
+    margin-right: 15px;
+    border-radius: 15px;
+    background-color: var(--cor-primaria-4);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--cor-primaria-1);
+    transition: transform 0.2s ease-out;
+}
+.scroll-card:hover {
+    transform: translateY(-5px);
+}
+.scroll-card .card-img-top {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.scroll-card .card-body {
+    padding: 15px;
+    height: 60px;
+}
+
+/* =========================================================
+   🔎 DETALHES
+   ========================================================= */
+.details-image-container { position: relative; width: 100%; height: 300px; }
+.details-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.details-image-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+}
+.details-body {
+    background-color: var(--cor-primaria-4);
+    padding: 20px;
+    margin-top: -30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+.details-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 1rem 0 1.5rem;
+}
+.details-body .btn {
+    font-weight: 600;
+}
+
+/* =========================================================
+   📂 CATEGORIAS (MENU GRID)
+   ========================================================= */
+/* =========================================================
+    📂 CATEGORIAS (MENU GRID) — CORRIGIDO
+    ========================================================= */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 15px;
+}
+
+.category-menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 120px;
+  padding: 20px 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: var(--cor-primaria-4);
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+/* Adicionando espaçamento entre o header e o conteúdo principal */
+.main-content {
+  padding-top: 80px !important;
+  padding-bottom: 80px;
+}
+
+/* =========================================================
+   ❤️ FAVORITOS
+   ========================================================= */
+.favorite-card {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-primaria-4);
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--cor-primaria-1);
+    margin-bottom: 10px;
+    transition: background-color 0.15s ease-in-out;
+}
+.favorite-card:hover {
+    background-color: var(--cor-secundaria-2);
+}
+.favorite-card img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.favorite-card-info { flex-grow: 1; }
+.favorite-card-info .badge {
+    text-transform: capitalize;
+    font-size: 0.7rem;
+    padding: 0.3em 0.5em;
+    background-color: var(--cor-primaria-2) !important;
+    color: var(--cor-primaria-4) !important;
+    border-radius: 0.5rem;
+}
+
+/* =========================================================
+   📱 NAVEGAÇÃO INFERIOR (RODAPÉ)
+   ========================================================= */
+.bottom-nav {
+    height: 65px;
+    z-index: 1030;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    background-color: var(--cor-menu-fundo);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bottom-nav-item {
+    color: var(--cor-menu-inativo);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.75rem;
+    flex-grow: 1;
+    text-align: center;
+}
+.bottom-nav-item i {
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+}
+.bottom-nav-item.active {
+    color: var(--cor-menu-ativo);
+    font-weight: bold;
+}
+
+/* =========================================================
+   🔘 BOTÕES PADRÕES
+   ========================================================= */
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+.btn-primary, .btn-danger, .btn-warning {
+    background-color: var(--cor-botao-primario-fundo) !important;
+    border-color: var(--cor-botao-primario-fundo) !important;
+    color: var(--cor-botao-primario-texto) !important;
+}
+.btn-outline-primary, .btn-outline-danger, .btn-outline-secondary {
+    color: var(--cor-botao-secionario-texto) !important;
+    border-color: var(--cor-botao-secionario-texto) !important;
+    background-color: transparent !important;
+}
+.btn-link {
+    color: var(--cor-botao-terciario-texto) !important;
+    text-decoration: none;
+}
+.btn-success {
+    background-color: var(--cor-outros-botoes-fundo) !important;
+    border-color: var(--cor-outros-botoes-fundo) !important;
+    color: var(--cor-outros-botoes-texto) !important;
+}
+/* =========================================================
+   🔹 OUTROS AJUSTES GERAIS
+   ========================================================= */
+.list-separator {
+    border-top: 1px solid var(--cor-separador);
+}

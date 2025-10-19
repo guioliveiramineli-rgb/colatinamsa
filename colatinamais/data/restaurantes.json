@@ -1,0 +1,30 @@
+[
+    {
+        "id": "restaurante_1760656750",
+        "nome": "Restaurante Irajá",
+        "tipo": "restaurante",
+        "descricao": "Excelente pratos, cardápio variados em peixes e carne, sempre um bom atendimento.",
+        "google_maps_url": "https:\/\/maps.app.goo.gl\/YU9wVUg6EgoxvwoE8",
+        "imagem": "uploads\/68f17d6ea9909-iraja-ii.jpg"
+    },
+    {
+        "id": "restaurante_1760703223",
+        "nome": "Sabor &amp; Cia",
+        "tipo": "restaurante",
+        "descricao": "Excelente e variados tipos de pratos, além do churrasco sempre bem feito!",
+        "google_maps_url": "https:\/\/maps.app.goo.gl\/F6An9y1u6Jf9rPVv7",
+        "imagem": "uploads\/68f232f7d9097-ico(20240723120750).png"
+    },
+    {
+        "id": "restaurante_1760900799",
+        "nome": "Eliesio Grill - Restaurante e Churrascaria",
+        "tipo": "restaurante",
+        "descricao": "O Eliesio Grill é um restaurante e churrascaria muito conhecido em Colatina, localizado no Centro da cidade. O estabelecimento oferece um ambiente agradável e climatizado, ideal para quem busca uma refeição de qualidade tanto no almoço quanto no jantar. Com um serviço que inclui buffet self service e churrasco, o Eliesio Grill se destaca pela variedade de pratos, que vão desde carnes suculentas até opções de saladas e acompanhamentos, agradando diferentes gostos.",
+        "google_maps_url": "https:\/\/maps.app.goo.gl\/ovncZDrwt5tuw4cE9",
+        "imagem": "uploads\/68f536bf1b397-eliesio.jpeg",
+        "telefone": "",
+        "email": "",
+        "website": "https:\/\/www.instagram.com\/eliesiogrill\/",
+        "ticket_url": ""
+    }
+]
